@@ -47,6 +47,15 @@ For development you can use this command:
   OR
   $ make develop
 
+Initialize Database
+-------------------
+
+Before you can start the service you need to initialize or upgrade the database:
+
+.. code-block:: console
+
+  $ make migrate
+
 Start PyWPS service
 -------------------
 
