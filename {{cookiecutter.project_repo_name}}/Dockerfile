@@ -22,10 +22,13 @@ RUN conda env create -n wps -f environment.yml
 # Install WPS
 RUN ["/bin/bash", "-c", "source activate wps && python setup.py develop"]
 
+# Init DB
+RUN ["/bin/bash", "-c", "source activate wps && pywps -c /opt/wps/pywps.cfg migrate"]
+
 # Start WPS service on port {{ cookiecutter.http_port }} on 0.0.0.0
 EXPOSE {{ cookiecutter.http_port }}
 ENTRYPOINT ["/bin/bash", "-c"]
-CMD ["source activate wps && exec {{ cookiecutter.project_slug }} start -b 0.0.0.0 -c /opt/wps/etc/demo.cfg"]
+CMD ["source activate wps && exec pywps -c /opt/wps/pywps.cfg start -b 0.0.0.0"]
 
 # docker build -t {{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }} .
 # docker run -p {{ cookiecutter.http_port }}:{{ cookiecutter.http_port }} {{ cookiecutter.github_username }}/{{ cookiecutter.project_repo_name }}
