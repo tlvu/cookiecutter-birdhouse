@@ -43,7 +43,7 @@ develop:
 .PHONY: migrate
 migrate:
 	@echo "Upgrade or initialize database ..."
-  @-bash -c 'pywps -c "$(CFG_FILE)" migrate'
+	@-bash -c 'pywps -c "$(CFG_FILE)" migrate'
 
 .PHONY: start
 start:
