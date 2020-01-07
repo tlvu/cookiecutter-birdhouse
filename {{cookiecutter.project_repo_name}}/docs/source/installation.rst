@@ -47,52 +47,38 @@ For development you can use this command:
   OR
   $ make develop
 
-Start {{ cookiecutter.project_name }} PyWPS service
--{{ '-' * (cookiecutter.project_name|count + 19) }}
+Start PyWPS service
+-------------------
 
-After successful installation you can start the service using the ``{{ cookiecutter.project_slug }}`` command-line.
+After successful installation you can start the service using the ``pywps`` command-line.
 
 .. code-block:: console
 
-   $ {{ cookiecutter.project_slug }} --help # show help
-   $ {{ cookiecutter.project_slug }} start  # start service with default configuration
+  # show help
+  $ pywps -h
 
-   OR
-
-   $ {{ cookiecutter.project_slug }} start --daemon # start service as daemon
-   loading configuration
-   forked process id: 42
+  # start service with default configuration (pywps.cfg)
+  $ pywps -c pywps.cfg start
 
 The deployed WPS service is by default available on:
 
 http://localhost:{{ cookiecutter.http_port }}/wps?service=WPS&version=1.0.0&request=GetCapabilities.
 
-.. NOTE:: Remember the process ID (PID) so you can stop the service with ``kill PID``.
-
-You can find which process uses a given port using the following command (here for port 5000):
-
-.. code-block:: console
-
-   $ netstat -nlp | grep :5000
-
-
 Check the log files for errors:
 
 .. code-block:: console
 
-   $ tail -f  pywps.log
+   $ tail -f pywps.log
 
 ... or do it the lazy way
 +++++++++++++++++++++++++
 
-You can also use the ``Makefile`` to start and stop the service:
+You can also use the ``Makefile`` to start service:
 
 .. code-block:: console
 
   $ make start
-  $ make status
   $ tail -f pywps.log
-  $ make stop
 
 
 Run {{ cookiecutter.project_name }} as Docker container
