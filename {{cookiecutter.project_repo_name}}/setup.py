@@ -61,8 +61,4 @@ setup(name='{{ cookiecutter.project_slug }}',
       install_requires=reqs,
       extras_require={
           "dev": dev_reqs,              # pip install ".[dev]"
-      },
-      entry_points={
-          'console_scripts': [
-              '{{ cookiecutter.project_slug }}={{ cookiecutter.project_slug }}.cli:cli',
-          ]},)
+      },)
