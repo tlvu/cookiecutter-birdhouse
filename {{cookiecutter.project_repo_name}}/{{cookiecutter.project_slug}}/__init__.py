@@ -4,4 +4,6 @@
 
 from .__version__ import __author__, __email__, __version__  # noqa: F401
 
-from .wsgi import application  # noqa: F401
+from pywps.application import make_app
+
+application = make_app()
