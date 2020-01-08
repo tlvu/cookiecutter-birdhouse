@@ -23,7 +23,7 @@ Cookiecutter for Birdhouse
 Cookiecutter_ is a command-line utility to create projects from templates. This `cookiecutter-birdhouse`
 template creates a barebone PyWPS server adhering to Birdhouse conventions. It comes complete with a
 framework for installation, configuration, deployment, documentation and tests. It even includes a
-*Dockerfile* for containerization! Create your project then get started writing new WPS
+`Dockerfile` for containerization! Create your project then get started writing new WPS
 processes in minutes.
 
 * GitHub repo: https://github.com/bird-house/cookiecutter-birdhouse/
@@ -40,17 +40,11 @@ Features
 --------
 
 * Ready-made PyWPS server (a bird)
-* Pre-configured `travis.yml`_ for Travis-CI_ automated deployment and testing
-* Pre-configured `codacy.yml`_ for automated Codacy_ code review
-* A Dockerfile_ and `docker-compose.yml`_ for containerization
+* Pre-configured ``travis.yml`` for Travis-CI_ automated deployment and testing
+* Pre-configured ``codacy.yml`` for automated Codacy_ code review
+* A ``Dockerfile`` and ``docker-compose.yml`` for containerization
 * Preconfigured Sphinx_ documentation that can be hosted on ReadTheDocs_
-* A Makefile_ to install the code, start, stop and poll the server and more
-
-.. _travis.yml: ./{{cookiecutter.project_repo_name}}/.travis.yml
-.. _codacy.yml: ./{{cookiecutter.project_repo_name}}/.codacy.yml
-.. _Dockerfile: ./{{cookiecutter.project_repo_name}}/Dockerfile
-.. _docker-compose.yml: ./{{cookiecutter.project_repo_name}}/docker-compose.yml
-.. _Makefile: ./{{cookiecutter.project_repo_name}}/Makefile
+* A ``Makefile`` to install the code, start, stop and poll the server and more
 
 Installation
 ------------
