@@ -20,10 +20,10 @@ Cookiecutter for Birdhouse
 
 *A Cookiecutter template for a Birdhouse bird package*
 
-Cookiecutter_ is a command-line utility to create projects from templates. This `cookiecutter-birdhouse`
+Cookiecutter_ is a command-line utility to create projects from templates. This *cookiecutter-birdhouse*
 template creates a barebone PyWPS server adhering to Birdhouse conventions. It comes complete with a
 framework for installation, configuration, deployment, documentation and tests. It even includes a
-`Dockerfile` for containerization! Create your project then get started writing new WPS
+*Dockerfile* for containerization! Create your project then get started writing new WPS
 processes in minutes.
 
 * GitHub repo: https://github.com/bird-house/cookiecutter-birdhouse/
