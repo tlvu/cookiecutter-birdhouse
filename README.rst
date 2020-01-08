@@ -40,11 +40,17 @@ Features
 --------
 
 * Ready-made PyWPS server (a bird)
-* Pre-configured :file:`.travis.yml` for Travis-CI_ automated deployment and testing
-* Pre-configured :file:`.codacy.yml` for automated Codacy_ code review
-* A :file:`Dockerfile` and :file:`docker-compose.yml` for containerization
+* Pre-configured `travis.yml`_ for Travis-CI_ automated deployment and testing
+* Pre-configured `codacy.yml`_ for automated Codacy_ code review
+* A Dockerfile_ and `docker-compose.yml`_ for containerization
 * Preconfigured Sphinx_ documentation that can be hosted on ReadTheDocs_
-* A :file:`Makefile` to install the code, start, stop and poll the server and more
+* A Makefile_ to install the code, start, stop and poll the server and more
+
+.. _travis.yml: ./.travis.yml
+.. _codacy.yml: ./.codacy.yml
+.. _Dockerfile: ./Dockerfile
+.. _docker-compose.yml: ./docker-compose.yml
+.. _Makefile: ./Makefile
 
 Installation
 ------------
