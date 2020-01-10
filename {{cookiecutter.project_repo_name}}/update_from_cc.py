@@ -13,6 +13,7 @@ How-to
 * Commit all files that were created or modified
 * Checkout a new branch from master
 * Merge the modifications made to the original version
+* Fix the conflicts and merge
 
 .. code:: bash
 
@@ -23,8 +24,7 @@ How-to
     cd {{ cookiecutter.project_slug }}
     git add * */.*
     git commit -m 'update from cookiecutter template'
-    git checkout -b cc_update master
-    git merge orig_cc_update
+    git rebase master
 
 """
 
