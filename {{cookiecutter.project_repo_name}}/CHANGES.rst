@@ -1,7 +1,7 @@
 Changes
 *******
 
-{{ cookiecutter.version }} ({% now 'local' %})
+{{ cookiecutter.version }} ({{ cookiecutter._timestamp }})
 ==================
 
 * First release.
