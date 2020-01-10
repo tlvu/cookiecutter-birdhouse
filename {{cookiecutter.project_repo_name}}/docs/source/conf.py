@@ -52,7 +52,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'{{ cookiecutter.project_name }}'
-copyright = u"{{ cookiecutter.timestamp, '%Y' }}, {{ cookiecutter.full_name }}"
+copyright = u"{{ cookiecutter.timestamp.split('-')[0] }}, {{ cookiecutter.full_name }}"
 author = u"{{ cookiecutter.full_name }}"
 
 # The version info for the project you're documenting, acts as replacement
