@@ -5,7 +5,7 @@ The intended use is to inject template changes into an existing repo.
 
 How-to
 ======
-* Make sure that there is no uncommited files.
+* Make sure that there are no files left uncommitted.
 * Check out the commit right after the repo creation by cookiecutter
   and create a new branch that will hold the template modifications.
 * Clean the repo
